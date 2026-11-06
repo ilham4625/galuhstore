@@ -1,159 +1,171 @@
 <!DOCTYPE html>
 <html lang="id">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>Kopi Senja – Kopi Arabika &amp; Robusta Pilihan Nusantara</title>
-		<meta name="description" content="Toko online kopi sangrai Kopi Senja: Arabika Gayo, Robusta Temanggung, dan drip bag. Pembayaran aman, kirim ke seluruh Indonesia.">
-		<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☕%3C/text%3E%3C/svg%3E">
-		<noscript><style>.page{display:block!important}</style></noscript>
-		<style>
-		:root{--c:#5a3a26;--a:#c8782a;--bg:#fffaf3;--l:#f1e4d3;--t:#2b1d14}
-		*{box-sizing:border-box;margin:0}
-		[id]{scroll-margin-top:110px}
-		body{font:16px/1.6 system-ui,sans-serif;background:var(--bg);color:var(--t)}
-		a{color:inherit}
-		.w{max-width:1040px;margin:auto;padding:0 16px}
-		header{background:var(--c);color:#fff;position:sticky;top:0;z-index:5}
-		header .w{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;padding-top:8px;padding-bottom:8px}
-		.brand{display:flex;align-items:center;gap:8px;font:700 20px Georgia,serif;text-decoration:none;margin-right:auto}
-		.brand svg{width:36px;height:36px}
-		nav{display:flex;gap:4px;overflow-x:auto;order:3;width:100%}
-		nav a{padding:6px 12px;border-radius:20px;text-decoration:none;white-space:nowrap;font-size:15px}
-		nav a.act,nav a:hover{background:var(--a)}
-		@media(min-width:720px){nav{order:0;width:auto}}
-		.btn{display:inline-block;border:0;border-radius:8px;background:var(--a);color:#fff;padding:10px 18px;font-family:inherit;font-size:15px;font-weight:600;cursor:pointer;text-decoration:none;text-align:center}
-		.btn:hover{filter:brightness(1.1)}
-		.page{display:none;padding:28px 0 48px}.page.on{display:block}
-		h1,h2,h3{font-family:Georgia,serif;line-height:1.25;color:var(--c)}
-		h2{font-size:26px;margin-bottom:14px}
-		.hero{background:linear-gradient(135deg,var(--c),#8a5a3a);border-radius:16px;padding:40px 24px;margin-bottom:24px}
-		.hero h1{color:#fff;font-size:clamp(28px,6vw,44px)}
-		.hero p{color:#fff;margin:12px 0 20px;max-width:520px}
-		.badges{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:32px}
-		.badges div{background:var(--l);border-radius:12px;padding:12px 16px;font-size:14px}
-		.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
-		.card{background:#fff;border:1px solid var(--l);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
-		.card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
-		.card div{padding:14px;display:flex;flex-direction:column;gap:8px;flex:1}
-		.card p{font-size:14px;flex:1}
-		.price{font-weight:700;font-size:18px;color:var(--a)}
-		select,input,textarea{width:100%;padding:10px;border:1px solid #cdb9a3;border-radius:8px;font:inherit;background:#fff}
-		.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-		.rev blockquote{background:var(--l);padding:16px;border-radius:12px;font-size:15px}
-		.rev b{display:block;margin-top:8px;font-size:14px}
-		.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
-		.two p{margin-bottom:8px}
-		details{background:#fff;border:1px solid var(--l);border-radius:10px;margin-bottom:10px;padding:12px 16px}
-		summary{cursor:pointer;font-weight:700;color:var(--c)}
-		ul{margin:8px 0 0 20px}
-		label{display:block;margin:10px 0 4px;font-weight:600;font-size:14px}
-		footer{background:#2b1d14;color:#e8d9c6;padding:28px 0;font-size:14px}
-		footer .w{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-		footer a{margin-right:10px}
-		.chip{display:inline-block;background:#3d2c20;border-radius:6px;padding:2px 8px;margin:2px}
-		#dr{position:fixed;top:0;right:0;width:min(380px,100%);height:100%;background:#fff;box-shadow:-4px 0 20px #0004;transform:translateX(100%);transition:.25s;z-index:9;padding:16px;display:flex;flex-direction:column;gap:10px}
-		#dr.on{transform:none}
-		#it{flex:1;overflow:auto}
-		.ci{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px solid var(--l);font-size:14px}
-		.q{white-space:nowrap}
-		.q button{width:28px;height:28px;border-radius:50%;border:1px solid #cdb9a3;background:#fff;cursor:pointer}
-		</style>
-	</head>
-	
-	
-	<body>
-		<header><div class="w">
-		<a class="brand" href="#beranda"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#c8782a"/><text x="20" y="27" font-size="19" text-anchor="middle" fill="#fff" font-family="Georgia">KS</text></svg>Kopi Senja</a>
-		<nav><a href="#beranda">Beranda</a><a href="#tentang">Tentang Kami</a><a href="#kontak">Kontak</a><a href="#kebijakan">Kebijakan</a></nav>
-		<button class="btn" id="cb" aria-label="Buka keranjang">🛒 <span id="cn">0</span></button>
-		</div></header>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GaluhStore – Toko Tumbler Stainless, Kaca &amp; Tritan</title>
+<meta name="description" content="GaluhStore menjual aneka tumbler: stainless, kaca, tritan, dan tumbler anak. Anti bocor, garansi 7 hari, pembayaran aman, kirim ke seluruh Indonesia.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🥤%3C/text%3E%3C/svg%3E">
+<noscript><style>.page{display:block!important}</style></noscript>
+<style>
+:root{--c:#0b3c49;--a:#ff7a45;--bg:#f5fafb;--l:#e3f0f2;--t:#12262c}
+*{box-sizing:border-box;margin:0}
+[id]{scroll-margin-top:110px}
+body{font:16px/1.6 system-ui,sans-serif;background:var(--bg);color:var(--t)}
+a{color:inherit}
+.w{max-width:1040px;margin:auto;padding:0 16px}
+header{background:var(--c);color:#fff;position:sticky;top:0;z-index:5}
+header .w{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;padding-top:8px;padding-bottom:8px}
+.brand{display:flex;align-items:center;gap:8px;font:800 21px system-ui,sans-serif;text-decoration:none;margin-right:auto}
+.brand svg{width:36px;height:36px}
+nav{display:flex;gap:4px;overflow-x:auto;order:3;width:100%}
+nav a{padding:6px 12px;border-radius:20px;text-decoration:none;white-space:nowrap;font-size:15px}
+nav a.act,nav a:hover{background:var(--a)}
+@media(min-width:720px){nav{order:0;width:auto}}
+.btn{display:inline-block;border:0;border-radius:8px;background:var(--a);color:#fff;padding:10px 18px;font-family:inherit;font-size:15px;font-weight:600;cursor:pointer;text-decoration:none;text-align:center}
+.btn:hover{filter:brightness(1.1)}
+.page{display:none;padding:28px 0 48px}.page.on{display:block}
+h1,h2,h3{line-height:1.25;color:var(--c)}
+h2{font-size:26px;margin-bottom:14px}
+h3{font-size:17px}
+.hero{background:linear-gradient(135deg,var(--c),#1b7a8c);border-radius:16px;padding:40px 24px;margin-bottom:24px}
+.hero h1{color:#fff;font-size:clamp(28px,6vw,44px)}
+.hero p{color:#fff;margin:12px 0 20px;max-width:520px}
+.badges{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:32px}
+.badges div{background:var(--l);border-radius:12px;padding:12px 16px;font-size:14px}
+#flt{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.f{border:1px solid #9cc3ca;background:#fff;border-radius:20px;padding:6px 16px;font:inherit;font-size:14px;cursor:pointer}
+.f.on{background:var(--c);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--l);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--l)}
+.card div{padding:14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card p{font-size:14px;flex:1}
+.card small{color:#4f6a72;font-size:13px}
+.price{font-weight:800;font-size:19px;color:var(--a)}
+select,input,textarea{width:100%;padding:10px;border:1px solid #9cc3ca;border-radius:8px;font:inherit;background:#fff}
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.rev blockquote{background:var(--l);padding:16px;border-radius:12px;font-size:15px}
+.rev b{display:block;margin-top:8px;font-size:14px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.two p{margin-bottom:8px}
+details{background:#fff;border:1px solid var(--l);border-radius:10px;margin-bottom:10px;padding:12px 16px}
+summary{cursor:pointer;font-weight:700;color:var(--c)}
+ul{margin:8px 0 0 20px}
+label{display:block;margin:10px 0 4px;font-weight:600;font-size:14px}
+footer{background:#0a2830;color:#cfe3e7;padding:28px 0;font-size:14px}
+footer .w{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+footer a{margin-right:10px}
+.chip{display:inline-block;background:#164553;border-radius:6px;padding:2px 8px;margin:2px}
+#dr{position:fixed;top:0;right:0;width:min(380px,100%);height:100%;background:#fff;box-shadow:-4px 0 20px #0004;transform:translateX(100%);transition:.25s;z-index:9;padding:16px;display:flex;flex-direction:column;gap:10px}
+#dr.on{transform:none}
+#it{flex:1;overflow:auto}
+.ci{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px solid var(--l);font-size:14px}
+.q{white-space:nowrap}
+.q button{width:28px;height:28px;border-radius:50%;border:1px solid #9cc3ca;background:#fff;cursor:pointer}
+</style>
+</head>
+<body>
+<header><div class="w">
+<a class="brand" href="#beranda"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#ff7a45"/><path d="M12 13h16l-2 19a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2z" fill="#fff"/><rect x="10" y="8" width="20" height="5" rx="2" fill="#fff"/></svg>GaluhStore</a>
+<nav><a href="#beranda">Beranda</a><a href="#tentang">Tentang Kami</a><a href="#kontak">Kontak</a><a href="#kebijakan">Kebijakan</a></nav>
+<button class="btn" id="cb" aria-label="Buka keranjang">🛒 <span id="cn">0</span></button>
+</div></header>
 
-		<main class="w">
-		<section id="beranda" class="page">
-		<div class="hero"><h1>Kopi sangrai segar, langsung dari petani.</h1><p>Arabika Gayo, Robusta Temanggung, dan drip bag praktis. Disangrai dalam batch kecil, dikirim ke seluruh Indonesia.</p><a class="btn" href="#produk">Belanja Sekarang</a></div>
-		<div class="badges"><div>🔒 Pembayaran aman &amp; rekening resmi</div><div>🚚 Kirim via JNE, J&amp;T, SiCepat</div><div>↩️ Retur 2×24 jam jika rusak</div><div>✅ Legal: NIB &amp; PIRT terdaftar</div></div>
-		<h2 id="produk">Produk Kami</h2>
-		<div class="grid" id="grid"></div>
-		<h2 style="margin-top:36px">Kata Pembeli</h2>
-		<div class="rev">
-		<blockquote>“Aromanya wangi banget pas dibuka, rasanya halus. Pengiriman cepat, packing aman.”<b>⭐⭐⭐⭐⭐ Rina, Yogyakarta</b></blockquote>
-		<blockquote>“Robusta-nya mantap buat kopi susu. Sudah repeat order tiga kali.”<b>⭐⭐⭐⭐⭐ Dimas, Semarang</b></blockquote>
-		<blockquote>“Drip bag-nya praktis dibawa ke kantor. Adminnya ramah dan fast respon.”<b>⭐⭐⭐⭐ Putri, Jakarta</b></blockquote>
-		</div>
-		</section>
+<main class="w">
+<section id="beranda" class="page">
+<div class="hero"><h1>Tumbler yang pas untuk setiap harimu.</h1><p>Stainless, kaca, tritan, sampai tumbler anak. Anti bocor, tahan panas dan dingin, garansi 7 hari.</p><a class="btn" href="#produk">Lihat Koleksi</a></div>
+<div class="badges"><div>🔒 Pembayaran aman &amp; rekening resmi</div><div>🚚 Kirim via JNE, J&amp;T, SiCepat</div><div>🛡️ Garansi bocor &amp; cacat 7 hari</div><div>✅ Legal: NIB terdaftar</div></div>
+<h2 id="produk">Koleksi Tumbler</h2>
+<div id="flt"></div>
+<div class="grid" id="grid"></div>
+<h2 style="margin-top:36px">Kata Pembeli</h2>
+<div class="rev">
+<blockquote>“Dinginnya awet sampai sore, tutupnya rapat banget. Packing aman pakai bubble wrap.”<b>⭐⭐⭐⭐⭐ Rina, Yogyakarta</b></blockquote>
+<blockquote>“Tumbler 40 oz-nya muat di cup holder mobil. Warnanya sama persis dengan di foto.”<b>⭐⭐⭐⭐⭐ Dimas, Surabaya</b></blockquote>
+<blockquote>“Beli yang anak buat sekolah, anaknya suka. Adminnya ramah dan fast respon.”<b>⭐⭐⭐⭐ Putri, Jakarta</b></blockquote>
+</div>
+</section>
 
-		<section id="tentang" class="page"><h2>Tentang Kami</h2>
-		<div class="two">
-		<div><p>Kopi Senja berdiri sejak 2023 dari kecintaan pada kopi lokal. Kami bekerja sama langsung dengan petani di Gayo, Temanggung, dan Flores, lalu menyangrai dalam batch kecil agar rasa tetap segar.</p>
-		<p><b>Visi:</b> membuat kopi lokal berkualitas mudah dinikmati semua orang.</p>
-		<p><b>Misi:</b> harga adil untuk petani, sangrai segar, layanan jujur dan responsif.</p></div>
-		<div><h3>Legalitas Usaha</h3><ul><li>Nama usaha: CV Kopi Senja Nusantara</li><li>NIB: 1234567890123</li><li>NPWP: 12.345.678.9-012.000</li><li>PIRT: P-IRT 2123374010001-27</li></ul></div>
-		</div></section>
+<section id="tentang" class="page"><h2>Tentang Kami</h2>
+<div class="two">
+<div><p>GaluhStore berdiri sejak 2024 dengan satu fokus: tumbler berkualitas yang terjangkau. Semua produk memakai bahan food grade (stainless steel 304, kaca borosilikat, dan Tritan BPA free), diperiksa satu per satu sebelum dikirim, dan dikemas aman dengan bubble wrap.</p>
+<p><b>Visi:</b> membuat kebiasaan minum air putih dan membawa tumbler jadi gaya hidup sehari-hari.</p>
+<p><b>Misi:</b> produk aman dan awet, harga jujur, layanan cepat dan responsif.</p></div>
+<div><h3>Legalitas Usaha</h3><ul><li>Nama usaha: GaluhStore (usaha perorangan)</li><li>NIB: 1234567890123</li><li>NPWP: 12.345.678.9-012.000</li></ul></div>
+</div></section>
 
-		<section id="kontak" class="page"><h2>Kontak</h2>
-		<div class="two">
-		<div>
-		<p>📍 Jl. Melati No. 12, Kec. Contoh, Kota Contoh 50123</p>
-		<p>💬 WhatsApp: <a href="https://wa.me/6281234567890">+62 812-3456-7890</a></p>
-		<p>📞 Telepon: <a href="tel:+622112345678">(021) 1234-5678</a></p>
-		<p>✉️ Email: <a href="mailto:halo@kopisenja.id">halo@kopisenja.id</a></p>
-		<p>🕗 Senin–Sabtu, 08.00–17.00 WIB</p>
-		</div>
-		<form id="f"><label for="n">Nama</label><input id="n" required><label for="m">Pesan</label><textarea id="m" rows="4" required></textarea><button class="btn" style="margin-top:12px">Kirim via WhatsApp</button></form>
-		</div></section>
+<section id="kontak" class="page"><h2>Kontak</h2>
+<div class="two">
+<div>
+<p>📍 Jl. Melati No. 12, Kota Bandung 40115</p>
+<p>💬 WhatsApp: <a class="wa"><span class="wat"></span></a></p>
+<p>📞 Telepon: <a href="tel:+622212345678">(022) 1234-5678</a></p>
+<p>✉️ Email: <a href="mailto:halo@galuhstore.id">halo@galuhstore.id</a></p>
+<p>🕗 Senin–Sabtu, 08.00–17.00 WIB</p>
+</div>
+<form id="f"><label for="n">Nama</label><input id="n" required><label for="m">Pesan</label><textarea id="m" rows="4" required></textarea><button class="btn" style="margin-top:12px">Kirim via WhatsApp</button></form>
+</div></section>
 
-		<section id="kebijakan" class="page"><h2>Kebijakan Toko</h2>
-		<details open><summary>🚚 Pengiriman</summary><ul><li>Pesanan diproses 1×24 jam (Senin–Sabtu); nomor resi dikirim via WhatsApp.</li><li>Kurir: JNE, J&amp;T, dan SiCepat. Estimasi 2–5 hari (Jawa), 4–8 hari (luar Jawa).</li><li>Ongkir sesuai tarif kurir; gratis ongkir untuk belanja mulai Rp 250.000.</li></ul></details>
-		<details><summary>↩️ Retur &amp; Refund</summary><ul><li>Klaim paling lambat 2×24 jam setelah barang diterima, sertakan video unboxing.</li><li>Produk rusak atau salah kirim: kami ganti baru atau refund 100% dalam 3–7 hari kerja.</li><li>Tidak berlaku untuk kemasan yang sudah dibuka tanpa cacat produk (produk makanan).</li></ul></details>
-		<details><summary>🔐 Kebijakan Privasi</summary><ul><li>Data (nama, alamat, nomor WhatsApp) hanya dipakai untuk memproses pesanan.</li><li>Data tidak dijual atau dibagikan, kecuali ke kurir untuk pengiriman.</li><li>Kami tidak menyimpan data kartu atau PIN. Permintaan hapus data: email halo@kopisenja.id.</li></ul></details>
-		<details><summary>💳 Cara Pembayaran</summary><ul><li>Transfer bank: BCA 1234567890, BRI 0987654321, Mandiri 1122334455 (a.n. CV Kopi Senja Nusantara).</li><li>QRIS dan e-wallet (GoPay, OVO, DANA): kode dikirim saat konfirmasi pesanan.</li><li>Alur: pilih produk → keranjang → Pesan via WhatsApp → bayar → kirim bukti transfer.</li><li>Pesanan diproses setelah pembayaran terkonfirmasi.</li></ul></details>
-		</section>
-		</main>
+<section id="kebijakan" class="page"><h2>Kebijakan Toko</h2>
+<details open><summary>🚚 Pengiriman</summary><ul><li>Pesanan diproses 1×24 jam (Senin–Sabtu); nomor resi dikirim via WhatsApp.</li><li>Kurir: JNE, J&amp;T, dan SiCepat. Estimasi 2–5 hari (Jawa), 4–8 hari (luar Jawa).</li><li>Semua paket dikemas bubble wrap dan dus tebal; produk kaca diberi pengaman tambahan.</li><li>Ongkir sesuai tarif kurir; gratis ongkir untuk belanja mulai Rp 300.000.</li></ul></details>
+<details><summary>↩️ Retur &amp; Refund</summary><ul><li>Klaim paling lambat 2×24 jam setelah barang diterima, wajib menyertakan video unboxing tanpa terputus.</li><li>Produk cacat, bocor, pecah, atau salah kirim: kami tukar baru atau refund 100% dalam 3–7 hari kerja.</li><li>Garansi anti bocor 7 hari sejak barang diterima.</li><li>Tidak berlaku untuk kerusakan akibat pemakaian (jatuh, penyok, lecet) setelah barang diterima.</li></ul></details>
+<details><summary>🔐 Kebijakan Privasi</summary><ul><li>Data (nama, alamat, nomor WhatsApp) hanya dipakai untuk memproses pesanan.</li><li>Data tidak dijual atau dibagikan, kecuali ke kurir untuk pengiriman.</li><li>Kami tidak menyimpan data kartu atau PIN. Permintaan hapus data: email halo@galuhstore.id.</li></ul></details>
+<details><summary>💳 Cara Pembayaran</summary><ul><li>Transfer bank: BCA 1234567890, BRI 0987654321, Mandiri 1122334455 (a.n. GaluhStore).</li><li>QRIS dan e-wallet (GoPay, OVO, DANA): kode dikirim saat konfirmasi pesanan.</li><li>Alur: pilih produk → keranjang → Pesan via WhatsApp → bayar → kirim bukti transfer.</li><li>Pesanan diproses setelah pembayaran terkonfirmasi.</li></ul></details>
+</section>
+</main>
 
-		<footer>
-		<div class="w">
-		<div><b>Kopi Senja</b><br>Kopi sangrai segar dari petani lokal.<br><span id="sec"></span></div>
-		<div><b>Ikuti Kami</b><br><a href="https://instagram.com/kopisenja" target="_blank" rel="noopener">Instagram</a><a href="https://tiktok.com/@kopisenja" target="_blank" rel="noopener">TikTok</a><a href="https://facebook.com/kopisenja" target="_blank" rel="noopener">Facebook</a></div>
-		<div><b>Pembayaran</b><br><span class="chip">BCA</span><span class="chip">BRI</span><span class="chip">Mandiri</span><span class="chip">QRIS</span><span class="chip">GoPay</span><span class="chip">DANA</span></div>
-		</div>
-		<div class="w" style="margin-top:16px">© 2026 CV Kopi Senja Nusantara · NIB 1234567890123</div>
-		</footer>
+<footer>
+<div class="w">
+<div><b>GaluhStore</b><br>Aneka tumbler berkualitas untuk teman minum sehari-hari.<br><span id="sec"></span></div>
+<div><b>Ikuti Kami</b><br><a href="https://instagram.com/galuhstore" target="_blank" rel="noopener">Instagram</a><a href="https://tiktok.com/@galuhstore" target="_blank" rel="noopener">TikTok</a><a href="https://facebook.com/galuhstore" target="_blank" rel="noopener">Facebook</a></div>
+<div><b>Pembayaran</b><br><span class="chip">BCA</span><span class="chip">BRI</span><span class="chip">Mandiri</span><span class="chip">QRIS</span><span class="chip">GoPay</span><span class="chip">DANA</span></div>
+</div>
+<div class="w" style="margin-top:16px">© 2026 GaluhStore · NIB 1234567890123</div>
+</footer>
 
-		<aside id="dr" aria-label="Keranjang belanja"><h3>Keranjang</h3><div id="it"></div><b id="tt"></b><a class="btn" id="co" target="_blank" rel="noopener">Pesan via WhatsApp</a><button class="btn" id="cl" style="background:#8a7a6c">Tutup</button></aside>
+<aside id="dr" aria-label="Keranjang belanja"><h3>Keranjang</h3><div id="it"></div><b id="tt"></b><a class="btn" id="co" target="_blank" rel="noopener">Pesan via WhatsApp</a><button class="btn" id="cl" style="background:#6b8890">Tutup</button></aside>
 
-		<script>
-		const WA='6281234567890',$=s=>document.querySelector(s),rp=n=>'Rp '+n.toLocaleString('id-ID');
-		// Placeholder foto. Ganti img dengan foto asli, mis. 'foto/arabika.jpg' (kompres, maks ±150 KB)
-		const ph=(e,a,b)=>'data:image/svg+xml,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><defs><linearGradient id="g"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient></defs><rect width="400" height="300" fill="url(#g)"/><text x="200" y="185" font-size="110" text-anchor="middle">${e}</text></svg>`);
-		const P=[
-		{n:'Arabika Gayo Aceh 250 g',h:85000,d:'Medium roast, aroma floral, manis karamel, asam lembut. Cocok untuk manual brew.',img:ph('☕','#5a3a26','#c8a27a'),v:['Biji utuh','Bubuk halus']},
-		{n:'Robusta Temanggung 250 g',h:55000,d:'Dark roast, body tebal, pahit cokelat. Pas untuk espresso dan kopi susu.',img:ph('🫘','#2b1d14','#7a5233'),v:['Biji utuh','Bubuk halus']},
-		{n:'House Blend Senja 250 g',h:70000,d:'Campuran 70% Arabika dan 30% Robusta, seimbang dan nyaman diminum tiap hari.',img:ph('🌅','#c8782a','#5a3a26'),v:['Biji utuh','Bubuk halus']},
-		{n:'Drip Bag Mix isi 10',h:65000,d:'5 Arabika + 5 Robusta. Tinggal seduh, praktis untuk kantor dan bepergian.',img:ph('📦','#8a5a3a','#e8c9a0')}
-		];
-		$('#grid').innerHTML=P.map((p,i)=>`<article class="card"><img src="${p.img}" alt="${p.n}" width="400" height="300" loading="lazy"><div><h3>${p.n}</h3><p>${p.d}</p>${p.v?`<select aria-label="Varian">${p.v.map(x=>`<option>${x}</option>`).join('')}</select>`:''}<span class="price">${rp(p.h)}</span><button class="btn" data-i="${i}">Tambah ke Keranjang</button></div></article>`).join('');
+<script>
+// Data toko. Foto: taruh file JPG di folder "foto" (tumbler-1.jpg s/d tumbler-6.jpg). Kosongkan FOTO jika foto sejajar dengan index.html.
+const S={wa:'6281234567890',wat:'+62 812-3456-7890'},FOTO='foto/';
+const $=s=>document.querySelector(s),rp=n=>'Rp '+n.toLocaleString('id-ID');
+const ph=f=>'data:image/svg+xml,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="#e3f0f2"/><text x="200" y="150" font-size="70" text-anchor="middle">🥤</text><text x="200" y="215" font-size="18" text-anchor="middle" fill="#0b3c49" font-family="sans-serif">${f}</text></svg>`);
+const P=[
+{n:'Vacuum Tumbler Stainless 500 ml',k:'Stainless',h:89000,f:'tumbler-1.jpg',st:45,s:'500 ml · stainless steel 304 · panas 8 jam / dingin 12 jam · isi: tumbler + tutup',d:'Tutup rapat anti bocor, muat di tas dan cup holder. Cocok untuk kuliah dan kerja.',v:['Hitam','Putih','Hijau Sage','Biru Navy']},
+{n:'Tumbler 40 oz Handle + Sedotan',k:'Stainless',h:189000,f:'tumbler-2.jpg',st:30,s:'1.200 ml · stainless steel 304 · dingin 24 jam · isi: tumbler + 2 sedotan + sikat',d:'Kapasitas jumbo dengan handle nyaman. Pas untuk cup holder mobil dan teman olahraga.',v:['Krem','Pink','Hitam','Abu-abu']},
+{n:'Travel Mug Kopi Anti Tumpah 350 ml',k:'Stainless',h:79000,f:'tumbler-3.jpg',st:60,s:'350 ml · stainless steel 304 · panas 6 jam · isi: mug + tutup tombol',d:'Tutup tombol sekali tekan, aman dibawa ke mana saja. Teman kopi pagi di perjalanan.',v:['Silver','Hitam','Maroon']},
+{n:'Tumbler Kaca Tutup Bambu + Infuser 450 ml',k:'Kaca',h:69000,f:'tumbler-4.jpg',st:50,s:'450 ml · kaca borosilikat tahan panas · isi: tumbler + tutup bambu + saringan teh + sleeve silikon',d:'Cocok untuk seduh teh dan infused water. Tampil estetik di meja kerja.',v:['Bening','Smoke Grey']},
+{n:'Tumbler Tritan BPA Free 750 ml',k:'Plastik',h:55000,f:'tumbler-5.jpg',st:80,s:'750 ml · plastik Tritan BPA free · isi: botol + sedotan + tali',d:'Ringan, bening, dan ada penanda jam minum supaya target air putih tercapai.',v:['Bening','Pink','Biru','Ungu']},
+{n:'Tumbler Anak 400 ml Sedotan Silikon',k:'Anak',h:65000,f:'tumbler-6.jpg',st:40,s:'400 ml · stainless dalam + silikon food grade · isi: tumbler + sedotan + tali bahu',d:'Sedotan silikon lembut dan tutup anti tumpah. Aman untuk anak sekolah.',v:['Biru','Pink','Kuning']}
+];
+function list(k='Semua'){
+$('#flt').innerHTML=['Semua',...new Set(P.map(p=>p.k))].map(c=>`<button class="f${c==k?' on':''}" data-k="${c}">${c}</button>`).join('');
+$('#grid').innerHTML=P.map((p,i)=>k=='Semua'||p.k==k?`<article class="card"><img src="${FOTO+p.f}" onerror="this.onerror=null;this.src=ph('${p.f}')" alt="${p.n}" width="400" height="300" loading="lazy"><div><small>${p.k}</small><h3>${p.n}</h3><p>${p.d}</p><small>${p.s}<br>Stok: ${p.st} tersedia</small><select aria-label="Pilih warna">${p.v.map(x=>`<option>${x}</option>`).join('')}</select><span class="price">${rp(p.h)}</span><button class="btn" data-i="${i}">Tambah ke Keranjang</button></div></article>`:'').join('')}
+$('#flt').onclick=e=>{const b=e.target.closest('button');if(b)list(b.dataset.k)};
 
-		let C={};
-		$('#grid').onclick=e=>{const b=e.target.closest('button');if(!b)return;const p=P[b.dataset.i],s=b.parentNode.querySelector('select'),v=s?s.value:'',k=p.n+'|'+v;(C[k]=C[k]||{n:p.n,v,h:p.h,q:0}).q++;draw();$('#dr').classList.add('on')};
-		$('#it').onclick=e=>{const b=e.target.closest('button');if(!b)return;const c=C[b.dataset.k];c.q+=+b.dataset.d;if(c.q<1)delete C[b.dataset.k];draw()};
-		$('#co').onclick=e=>{if(!Object.keys(C).length)e.preventDefault()};
-		$('#cb').onclick=()=>$('#dr').classList.toggle('on');
-		$('#cl').onclick=()=>$('#dr').classList.remove('on');
-		function draw(){
-		const L=Object.entries(C),t=L.reduce((s,[,c])=>s+c.h*c.q,0),n=L.reduce((s,[,c])=>s+c.q,0),nm=c=>c.n+(c.v?' ('+c.v+')':'');
-		$('#cn').textContent=n;
-		$('#it').innerHTML=L.length?L.map(([k,c])=>`<div class="ci"><span>${nm(c)}<br>${rp(c.h)}</span><span class="q"><button data-k="${k}" data-d="-1" aria-label="Kurangi">−</button> ${c.q} <button data-k="${k}" data-d="1" aria-label="Tambah">+</button></span></div>`).join(''):'<p>Keranjang masih kosong.</p>';
-		$('#tt').textContent='Total: '+rp(t);
-		const m='Halo Kopi Senja, saya ingin memesan:\n'+L.map(([,c])=>`- ${nm(c)} x${c.q} = ${rp(c.h*c.q)}`).join('\n')+`\nTotal: ${rp(t)}\nNama & alamat pengiriman: `;
-		$('#co').href=L.length?'https://wa.me/'+WA+'?text='+encodeURIComponent(m):'#';
-		}
-		$('#f').onsubmit=e=>{e.preventDefault();open('https://wa.me/'+WA+'?text='+encodeURIComponent('Halo Kopi Senja, saya '+$('#n').value+'.\n'+$('#m').value),'_blank')};
-		$('#sec').textContent=location.protocol=='https:'?'🔒 Koneksi aman (HTTPS)':'🔓 Buka lewat HTTPS agar aman';
+let C={};
+$('#grid').onclick=e=>{const b=e.target.closest('button');if(!b)return;const p=P[b.dataset.i],v=b.parentNode.querySelector('select').value,k=p.n+'|'+v;(C[k]=C[k]||{n:p.n,v,h:p.h,q:0}).q++;draw();$('#dr').classList.add('on')};
+$('#it').onclick=e=>{const b=e.target.closest('button');if(!b)return;const c=C[b.dataset.k];c.q+=+b.dataset.d;if(c.q<1)delete C[b.dataset.k];draw()};
+$('#co').onclick=e=>{if(!Object.keys(C).length)e.preventDefault()};
+$('#cb').onclick=()=>$('#dr').classList.toggle('on');
+$('#cl').onclick=()=>$('#dr').classList.remove('on');
+function draw(){
+const L=Object.entries(C),t=L.reduce((s,[,c])=>s+c.h*c.q,0),n=L.reduce((s,[,c])=>s+c.q,0),nm=c=>c.n+' ('+c.v+')';
+$('#cn').textContent=n;
+$('#it').innerHTML=L.length?L.map(([k,c])=>`<div class="ci"><span>${nm(c)}<br>${rp(c.h)}</span><span class="q"><button data-k="${k}" data-d="-1" aria-label="Kurangi">−</button> ${c.q} <button data-k="${k}" data-d="1" aria-label="Tambah">+</button></span></div>`).join(''):'<p>Keranjang masih kosong.</p>';
+$('#tt').textContent='Total: '+rp(t);
+const m='Halo GaluhStore, saya ingin memesan:\n'+L.map(([,c])=>`- ${nm(c)} x${c.q} = ${rp(c.h*c.q)}`).join('\n')+`\nTotal: ${rp(t)}\nNama & alamat pengiriman: `;
+$('#co').href=L.length?'https://wa.me/'+S.wa+'?text='+encodeURIComponent(m):'#';
+}
+$('#f').onsubmit=e=>{e.preventDefault();open('https://wa.me/'+S.wa+'?text='+encodeURIComponent('Halo GaluhStore, saya '+$('#n').value+'.\n'+$('#m').value),'_blank')};
+document.querySelectorAll('.wa').forEach(a=>a.href='https://wa.me/'+S.wa);
+document.querySelectorAll('.wat').forEach(x=>x.textContent=S.wat);
+$('#sec').textContent=location.protocol=='https:'?'🔒 Koneksi aman (HTTPS)':'🔓 Buka lewat HTTPS agar aman';
 
-		const pg=[...document.querySelectorAll('.page')],nv=[...document.querySelectorAll('nav a')];
-		function go(){const e=document.getElementById(location.hash.slice(1)),p=e&&e.closest('.page')||pg[0];pg.forEach(x=>x.classList.toggle('on',x==p));nv.forEach(a=>a.classList.toggle('act',a.hash=='#'+p.id));e&&e!=p?e.scrollIntoView():scrollTo(0,0)}
-		addEventListener('hashchange',go);go();draw();
-		</script>
-	</body>
+const pg=[...document.querySelectorAll('.page')],nv=[...document.querySelectorAll('nav a')];
+function go(){const e=document.getElementById(location.hash.slice(1)),p=e&&e.closest('.page')||pg[0];pg.forEach(x=>x.classList.toggle('on',x==p));nv.forEach(a=>a.classList.toggle('act',a.hash=='#'+p.id));e&&e!=p?e.scrollIntoView():scrollTo(0,0)}
+addEventListener('hashchange',go);list();go();draw();
+</script>
+</body>
 </html>
